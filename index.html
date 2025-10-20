@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,86 +5,152 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TOE SID HAMED ROBINSON | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5; /* Light background for Material Design feel */
+      color: #333;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .btn-primary {
+      background-color: #6200ea; /* Deep purple, common in Material Design */
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #3700b3;
+    }
+    .btn-secondary {
+      background-color: #03dac6; /* Teal accent */
+      color: #333;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn-secondary:hover {
+      background-color: #00bfa5;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: #6200ea;
+      outline: none;
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-white font-sans">
-  <header class="text-center py-10 bg-blue-950">
-    <h1 class="text-4xl font-bold">TOE SID HAMED ROBINSON</h1>
-    <p class="text-lg mt-2">Développeur Web & Mobile passionné par l’innovation et la sécurité numérique.</p>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-white shadow-sm py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold text-gray-900">TOE SID HAMED ROBINSON</h1>
+      <p class="text-xl mt-2 text-gray-600">Développeur Web & Mobile passionné par l’innovation et la sécurité numérique.</p>
+    </div>
   </header>
 
-  <!-- Photo de profil -->
-  <section class="text-center mt-6">
-    <img src="photo.jpg" alt="Ma photo" class="w-32 h-32 mx-auto rounded-full border-4 border-blue-700 shadow-lg">
-  </section>
-
-  <section class="p-6 max-w-4xl mx-auto">
-    <h2 class="text-2xl font-semibold border-b border-blue-700 pb-2 mb-4">À propos de moi</h2>
-    <p>
-      Développeur web & mobile passionné par les technologies innovantes et les solutions à impact. Fort d'une expérience dans la création de plateformes intelligentes comme MINDSAFE AI, je combine mes compétences en développement (React, HTML/CSS, JavaScript) avec une vision tournée vers l'Afrique digitale.
-
-💡 Je suis également intéressé par l'Open Data, l'IA conversationnelle et les technologies d'aide à la décision pour les secteurs sensibles comme la sécurité industrielle, l'assurance ou la mobilité.
-
-🎯 Objectif : contribuer à des projets concrets et utiles, que ce soit dans des startups, des institutions ou des entreprises en transformation digitale.
-
-📍 Basé à Abidjan, ouvert aux opportunités à distance ou locales dans des projets tech à fort potentiel.
-    </p>
-  </section>
-
-  <section class="p-6 max-w-4xl mx-auto">
-    <h2 class="text-2xl font-semibold border-b border-blue-700 pb-2 mb-4">Mes projets</h2>
-
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-blue-950 p-4 rounded-lg shadow-lg">
-        <img src="Mindsafe.jpg" alt="MINDSAFE AI" class="rounded mb-2 w-full h-48 object-cover" />
-        <h3 class="text-xl font-bold">MINDSAFE AI</h3>
-        <p class="mb-2">Solution de prévention des risques industriels avec IA.</p>
-        <a href="https://youtu.be/AilCMyvqq-8?si=mNd2_WMrvDiRsMN6" target="_blank" class="text-blue-400 underline">Voir la démo</a>
+  <main class="max-w-6xl mx-auto p-6">
+    <!-- Section À propos de moi -->
+    <section class="card flex flex-col md:flex-row items-center md:items-start gap-8 mb-8">
+      <div class="flex-shrink-0">
+        <img src="photo.jpg" alt="Ma photo" class="w-48 h-48 object-cover rounded-lg shadow-lg">
       </div>
-      
-      <div class="bg-blue-950 p-4 rounded-lg shadow-lg">
-        <img src="CI-VIEW.jpg" alt="CI-VIEW" class="rounded mb-2 w-full h-48 object-cover" />
-        <h3 class="text-xl font-bold">CI-VIEW</h3>
-        <p class="mb-2">Plateforme de suivi des données urbaines en temps réel.</p>
-        <a href="" target="_blank" class="text-blue-400 underline">Voir la démo</a>
+      <div>
+        <h2 class="text-3xl font-semibold border-b-2 border-purple-600 pb-3 mb-4 text-gray-900">À propos de moi</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Développeur web & mobile passionné par les technologies innovantes et les solutions à impact. Fort d'une expérience dans la création de plateformes intelligentes comme MINDSAFE AI, je combine mes compétences en développement (React, HTML/CSS, JavaScript) avec une vision tournée vers l'Afrique digitale.
+        </p>
+        <p class="text-gray-700 leading-relaxed mt-4">
+          💡 Je suis également intéressé par l'Open Data, l'IA conversationnelle et les technologies d'aide à la décision pour les secteurs sensibles comme la sécurité industrielle, l'assurance ou la mobilité.
+        </p>
+        <p class="text-gray-700 leading-relaxed mt-4">
+          🎯 Objectif : contribuer à des projets concrets et utiles, que ce soit dans des startups, des institutions ou des entreprises en transformation digitale.
+        </p>
+        <p class="text-gray-700 leading-relaxed mt-4">
+          📍 Basé à Abidjan, ouvert aux opportunités à distance ou locales dans des projets tech à fort potentiel.
+        </p>
       </div>
+    </section>
 
-      <div class="bg-blue-950 p-4 rounded-lg shadow-lg">
-        <img src="FinGo.jpg" alt="FinGo" class="rounded mb-2 w-full h-48 object-cover" />
-        <h3 class="text-xl font-bold">FinGo</h3>
-        <p class="mb-2">Application de Paiement Mobile et Inclusion Financiere.</p>
-        <a href="" target="_blank" class="text-blue-400 underline">Voir la démo</a>
+    <!-- Mes projets -->
+    <section class="card">
+      <h2 class="text-3xl font-semibold border-b-2 border-purple-600 pb-3 mb-6 text-gray-900">Mes projets</h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition-shadow duration-300">
+          <img src="Mindsafe.jpg" alt="MINDSAFE AI" class="rounded mb-4 w-full h-48 object-cover" />
+          <h3 class="text-xl font-bold text-gray-900 mb-2">MINDSAFE AI</h3>
+          <p class="text-gray-700 mb-4">Solution de prévention des risques industriels avec IA.</p>
+          <a href="https://youtu.be/AilCMyvqq-8?si=mNd2_WMrVDiRsMN6" target="_blank" class="btn-primary inline-block text-sm">Voir la démo</a>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition-shadow duration-300">
+          <img src="CI-VIEW.jpg" alt="CI-VIEW" class="rounded mb-4 w-full h-48 object-cover" />
+          <h3 class="text-xl font-bold text-gray-900 mb-2">CI-VIEW</h3>
+          <p class="text-gray-700 mb-4">Plateforme de suivi des données urbaines en temps réel.</p>
+          <a href="#" target="_blank" class="btn-primary inline-block text-sm">Voir la démo</a>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition-shadow duration-300">
+          <img src="FinGo.jpg" alt="FinGo" class="rounded mb-4 w-full h-48 object-cover" />
+          <h3 class="text-xl font-bold text-gray-900 mb-2">FinGo</h3>
+          <p class="text-gray-700 mb-4">Application de Paiement Mobile et Inclusion Financière.</p>
+          <a href="#" target="_blank" class="btn-primary inline-block text-sm">Voir la démo</a>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition-shadow duration-300">
+          <img src="menuflash.jpg" alt="MenuFlash" class="rounded mb-4 w-full h-48 object-cover" />
+          <h3 class="text-xl font-bold text-gray-900 mb-2">MenuFlash</h3>
+          <p class="text-gray-700 mb-4">Les menus papiers sont désormais digitalisés.</p>
+          <a href="https://ridiscus.github.io/Gaspardmenu/" target="_blank" class="btn-primary inline-block text-sm">Voir la démo</a>
+        </div>
       </div>
+    </section>
 
-      <div class="bg-blue-950 p-4 rounded-lg shadow-lg">
-        <img src="menuflash.jpg" alt="FinGo" class="rounded mb-2 w-full h-48 object-cover" />
-        <h3 class="text-xl font-bold">MenuFlash</h3>
-        <p class="mb-2">Les menus papiers sont desormais digitalisés.</p>
-        <a href="https://ridiscus.github.io/Gaspardmenu/" target="_blank" class="text-blue-400 underline">Voir la démo</a>
+    <!-- Contact -->
+    <section class="card">
+      <h2 class="text-3xl font-semibold border-b-2 border-purple-600 pb-3 mb-6 text-gray-900">Contactez-moi</h2>
+
+      <form class="grid gap-4">
+        <input type="text" placeholder="Votre nom" class="p-3 rounded bg-gray-50 text-gray-800 border border-gray-300 focus:border-purple-600 transition" required />
+        <input type="email" placeholder="Votre email" class="p-3 rounded bg-gray-50 text-gray-800 border border-gray-300 focus:border-purple-600 transition" required />
+        <textarea placeholder="Votre message" rows="6" class="p-3 rounded bg-gray-50 text-gray-800 border border-gray-300 focus:border-purple-600 transition" required></textarea>
+        <button type="submit" class="btn-primary font-medium">Envoyer le message</button>
+      </form>
+
+      <!-- WhatsApp Contact -->
+      <div class="mt-8 text-center">
+        <p class="mb-4 text-gray-700">Ou contactez-moi directement via WhatsApp :</p>
+        <a href="https://wa.me/2250706366303" target="_blank" class="btn-secondary inline-flex items-center space-x-2 shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.911.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.45-1.05 3.193-1.613 4.97-1.612 5.034 0 9.133-4.097 9.136-9.132 0-5.035-4.099-9.136-9.136-9.136-5.035 0-9.132 4.099-9.132 9.136 0 1.764.595 3.454 1.704 4.76l-.959 3.493 3.548-.928zm-4.078-1.163l.394-.138c1.176.745 2.531 1.144 3.931 1.144 4.218 0 7.643-3.423 7.646-7.641.002-4.218-3.423-7.641-7.646-7.641-4.218 0-7.641 3.421-7.641 7.641 0 1.294.347 2.511.996 3.58l-.297 1.091zm.699-.447l-.234-.077c.883.627 1.897.962 2.96.962 3.526 0 6.388-2.861 6.391-6.385.002-3.526-2.861-6.388-6.391-6.388-3.525 0-6.386 2.861-6.386 6.388 0 1.096.287 2.126.837
+
+3.03l-.176.645z"/></svg>
+          Envoyer un message WhatsApp
+        </a>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Contact -->
-<section class="p-6 max-w-4xl mx-auto mt-10">
-  <h2 class="text-2xl font-semibold border-b border-blue-700 pb-2 mb-4">Contactez-moi</h2>
-
-  <form class="grid gap-4">
-    <input type="text" placeholder="Votre nom" class="p-2 rounded bg-gray-800 text-white border border-gray-700" required />
-    <input type="email" placeholder="Votre email" class="p-2 rounded bg-gray-800 text-white border border-gray-700" required />
-    <textarea placeholder="Votre message" rows="5" class="p-2 rounded bg-gray-800 text-white border border-gray-700" required></textarea>
-    <button type="submit" class="bg-blue-700 hover:bg-blue-600 text-white py-2 rounded">Envoyer</button>
-  </form>
-
-  <!-- WhatsApp Contact -->
-  <div class="mt-6 text-center">
-    <p class="mb-2">Ou contactez-moi directement via WhatsApp :</p>
-    <a href="https://wa.me/2250706366303" target="_blank" class="inline-block bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-full shadow-lg">
-      📱 Envoyer un message WhatsApp
-    </a>
-  </div>
-</section>
-
-  <footer class="text-center text-sm py-4 text-gray-400 mt-10 border-t border-gray-700">
+  <footer class="text-center text-sm py-6 bg-white border-t border-gray-200 text-gray-500 mt-10">
     © 2025 TOE SID HAMED ROBINSON. Tous droits réservés.
   </footer>
 </body>
